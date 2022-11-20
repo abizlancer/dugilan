@@ -1,0 +1,71 @@
+.header {
+  height: 520px;
+  padding: 123px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+  &__info {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 45px;
+    
+    h1 {
+      @include fonts(45px, 54px, $black, 700);
+      letter-spacing: -0.88%;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      outline: 1px solid $stroke;
+      border-radius: 10px;
+      overflow: hidden;
+      
+      input {
+        border: none;
+        outline: none;
+        padding: 20px;
+        background: $white;
+        &::placeholder {
+          @include fonts(15px, 22.5px, $stroke);
+          letter-spacing: -0.18px;
+        }
+      }
+      .btn {
+        border-radius: 0 10px 10px 0;
+      }
+    }
+    p {
+      @include fonts(20px, 29px, $gray);
+      letter-spacing: -0.33%;
+    }
+  }
+  &__photos {
+    width: 48%;
+    height: 100%;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      filter: blur(5px);
+    }
+    &--content {
+      position: relative;
+    }
+    &--item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+     
+      
+    }
+  }
+}
