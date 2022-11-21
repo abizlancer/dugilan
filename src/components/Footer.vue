@@ -1,5 +1,5 @@
 <template >
-  <footer class="footer">
+  <footer class="footer container">
     <article class="footer__item">
       <p>Envato Market</p>
       <ul class="footer__list">

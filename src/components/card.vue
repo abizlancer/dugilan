@@ -8,16 +8,16 @@
         </div>
         <div class="card__links--add">
           <button type="button">
-            <img src="../../public/img/categories/icons/eye.svg" alt="eye">
+            <img src="img/categories/icons/eye.svg" alt="eye">
           </button>
           <button type="button">
-            <img src="../../public/img/categories/icons/shopping-cart.svg" alt="cart">
+            <img src="img/categories/icons/shopping-cart.svg" alt="cart">
           </button>
         </div>
       </div>
     </div>
     <div class="card__info">
-      <h5>{{ item.title }}</h5>
+      <a :href="item.link"><h5>{{ item.title }}</h5></a>
       <h6>{{ item.stack }}</h6>
       <p>{{ item.price }}</p>
     </div>

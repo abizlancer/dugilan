@@ -10,32 +10,32 @@ export default defineStore("categories", ({
       },
       {
         img: "/img/categories/icons/wordpress.svg",
-        text: "Home",
+        text: "WordPress Themes",
         link: "#!"
       },
       {
         img: "/img/categories/icons/eCommerce.svg",
-        text: "Home",
+        text: "eCommerce Templates",
         link: "#!"
       },
       {
         img: "/img/categories/icons/marketing.svg",
-        text: "Home",
+        text: "Marketing Templates",
         link: "#!"
       },
       {
         img: "/img/categories/icons/cms.svg",
-        text: "Home",
+        text: "CMS Templates",
         link: "#!"
       },
       {
         img: "/img/categories/icons/site.svg",
-        text: "Home",
+        text: "Site Templates",
         link: "#!"
       },
       {
         img: "/img/categories/icons/blogging.svg",
-        text: "Home",
+        text: "Blogging",
         link: "#!"
       },
     ],

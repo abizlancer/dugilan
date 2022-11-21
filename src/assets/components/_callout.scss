@@ -2,12 +2,20 @@
   padding: 30px 31px;
   background: $light-blue;
   border-radius: 10px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 48px;
+  @include media(1500) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  @include media(1200) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   
   &__item {
+    grid-column: span 1;
     display: flex;
     gap: 16.67px;
     align-items: flex-start;

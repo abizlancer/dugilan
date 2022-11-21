@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav container">
     <img src="/img/logo.svg" alt="logo">
     <div class="nav__content">
       <ul class="nav__list">

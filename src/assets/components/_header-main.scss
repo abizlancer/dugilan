@@ -16,6 +16,9 @@
       grid-template-columns: repeat(3, 1fr);
       row-gap: 37.5px;
       column-gap: 19.12px;
+      @include media(992) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }

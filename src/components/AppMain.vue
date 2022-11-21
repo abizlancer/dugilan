@@ -3,6 +3,7 @@
     <article class="main__right">
       <categories title="Browse Categories" :browseCat="browseCat" />
       <subscribe />
+      <chart />
       <ads />
     </article>
     <article class="main__content">
@@ -20,6 +21,7 @@ import useCategoriesStore from "../stores/categories"
 import Card from "./Card.vue"
 import Categories from "./Categories.vue"
 import Subscribe from "./Subscribe.vue"
+import Chart from "./Chart.vue"
 import Ads from "./Ads.vue"
 import CallOut from "./CallOut.vue"
 
@@ -28,6 +30,7 @@ export default {
   name: "main",
   components: {
     Subscribe,
+    Chart,
     Ads,
     CallOut,
     Card,

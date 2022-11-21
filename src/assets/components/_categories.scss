@@ -7,15 +7,22 @@
     background: $blue;
     text-transform: uppercase;
     @include fonts(30px, 39px, $white, 600);
-    letter-spacing: -0.58%;
+    letter-spacing: -0.0058em;
     padding: 17px 25px 18px;
   }
   &__item {
     padding: 24px 30px 25px;
     border: 1px solid #ebebeb;
     background: $white;
+    transition: 0.3s linear;
+    @include fonts(15px, 24px, $black);
+    letter-spacing: -0.0033em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
     &:hover {
-      // background: ;
+      background: rgba(15, 175, 233, 0.1);
     }
   }
 }
