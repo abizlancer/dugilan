@@ -1,6 +1,8 @@
 <template>
   <nav class="nav container">
-    <img src="/img/logo.svg" alt="logo">
+    <router-link :to="{ name: 'home' }">
+      <img src="/img/logo.svg" alt="logo">
+    </router-link>
     <div class="nav__content">
       <ul class="nav__list">
         <li><a href="#!" class="icon-chevron-down" >Browse</a></li>

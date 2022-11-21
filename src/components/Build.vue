@@ -1,5 +1,5 @@
 <template >
-	<section class="build">
+	<section class="build container">
     <img src="/img/build.png" alt="build">
     <div class="build__content">
       <h2>We build apps and websites</h2>
