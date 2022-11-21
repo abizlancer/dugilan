@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
+  @include media(576) {
+    margin-top: 25px;
+  }
   &__content {
     width: 100%;
     display: flex;

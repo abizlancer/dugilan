@@ -29,9 +29,11 @@ $light-blue: var(--light-blue);
 
 .icon {
   &-chevron-down::before {content: '\f078'; font-weight: 400;}
-  &-facebook::before {content: '\f39e'; font-weight: 400;}
-  &-twitter::before {content: '\f099'; font-weight: 400;}
-  &-instagram::before {content: '\f16d'; font-weight: 400;}
+  &-facebook::before {content: '\f39e'; font-weight: 400; color: #3B5998;}
+  &-twitter::before {content: '\f099'; font-weight: 400; color: #489DFF;}
+  &-instagram::before {content: '\f16d'; font-weight: 400; color: #C32AA3;}
+  &-dribble::before {content: '\f434'; font-weight: 400; color: #EA4C89;}
+  &-linkedIn::before {content: '\f0e1'; font-weight: 400; color: #007BB5;}
   &-play::before {content: '\f04b'; font-weight: 900;}
 }
 .container {
@@ -39,7 +41,7 @@ $light-blue: var(--light-blue);
   border: 1px solid red;
 }
 .btn {
-  width: 190px;
+  padding: 30px;
   height: 60px;
   @include fonts(15px, 22.5px, $white, 500);
   letter-spacing: -0.18px;
@@ -49,4 +51,7 @@ $light-blue: var(--light-blue);
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media(480) {
+    padding: 15px;
+  }
 }

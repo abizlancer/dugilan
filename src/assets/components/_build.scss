@@ -1,0 +1,64 @@
+.build {
+  height: 425px;
+  box-shadow: 1px 4px 44px rgba(0, 0, 0, 0.03);
+  background: #E0F0F6;
+  border-radius: 10px;
+  margin: 100px 0;
+  overflow: hidden;
+  position: relative;
+  @include media(480) {
+    height: 435px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    @include media(1400) {
+      display: none;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 540px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    @include media(992) {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 30px;
+      justify-content: center;
+    }
+    h2 {
+      @include fonts(35px, 44px, $blue, 700);
+      letter-spacing: -0.68%;
+    }
+    p {
+      @include fonts(20px, 29px, $black);
+      letter-spacing: -0.39%;
+      @include media(480) {
+        @include fonts(16px, 20px);
+      }
+    }
+    &--links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      @include media(480) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      a:last-of-type {
+        @include fonts(18px, 27px, $black,);
+        letter-spacing: -0.35%;
+      }
+    }
+  }
+}

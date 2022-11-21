@@ -1,21 +1,33 @@
 .header {
   height: 520px;
-  padding: 123px 0 100px;
+  margin: 123px 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  @include media(1450) {
+   margin: 100px 0;
+   height: unset;
+  }
   
   &__info {
-    width: 48%;
+    width: 38%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 45px;
+    @include media(1450) {
+      width: 70%;
+    }
+    @include media(992) {
+      width: 100%;
+    }
     
     h1 {
       @include fonts(45px, 54px, $black, 700);
       letter-spacing: -0.88%;
+      @include media(576) {
+        @include fonts(30px, 45px)
+      }
     }
     form {
       display: flex;
@@ -41,31 +53,48 @@
     p {
       @include fonts(20px, 29px, $gray);
       letter-spacing: -0.33%;
+      @include media(576) {
+        @include fonts(16px, 19px)
+      }
     }
   }
   &__photos {
-    width: 48%;
+    width: 57%;
     height: 100%;
     position: relative;
+    @include media(1450) {
+      display: none;
+    }
+    
     img {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
-      width: 100%;
-      filter: blur(5px);
-    }
-    &--content {
-      position: relative;
-    }
-    &--item {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      width: 604px;
+      height: 338px;
+      box-shadow: 1px 4px 44px rgba(0, 0, 0, 0.03);
+      border-radius: 10px;
+      filter: blur(2.5px);
+      @include media(1600) {
+        width: 500px;
+        height: 300px;
+        bottom: 10%;
+        left: 6%;
+      }
       
-     
-      
+      &:first-of-type {
+        filter: blur(0);
+        z-index: 3;
+      }
+      &:nth-of-type(2) {
+        top: 17%;
+        left: 15%;
+        z-index: 2;
+      }
+      &:last-of-type {
+        top: 0;
+        left: 33%;
+      }
     }
   }
 }

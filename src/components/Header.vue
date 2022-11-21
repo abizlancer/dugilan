@@ -9,11 +9,7 @@
       <p>From multipurpose themes to niche templates, you'll always find something that catches your eye.</p>
     </div>
     <div class="header__photos">
-      <div class="header__photos--content">
-        <img v-for="(item, key) in headerPhotos" :key="key" :src="item.img" alt="item">
-        <div class="header__photos--item" >
-        </div>
-      </div>
+      <img v-for="(item, key) in headerPhotos" :key="key" :src="item.img" alt="item">
     </div>
   </header>
 </template>

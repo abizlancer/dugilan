@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin-bottom: 70px;
+  
+  &__item {
+    @include media(992) {
+      width: 50%;
+    }
+    @include media(480) {
+      width: 100%;
+    }
+    p {
+      @include fonts(20px, 29px, $black, 600);
+      letter-spacing: -0.33%;
+      margin-bottom: 25px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    a {
+      @include fonts(15px, 24px, $black);
+      letter-spacing: -0.33%;
+    }
+  }
+}
