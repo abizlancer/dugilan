@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+  
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  &__content {
+    
+    &--main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 37.5px;
+      column-gap: 19.12px;
+    }
+  }
+}

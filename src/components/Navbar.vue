@@ -3,7 +3,7 @@
     <img src="/img/logo.svg" alt="logo">
     <div class="nav__content">
       <ul class="nav__list">
-        <li><a href="#!" class="icon-chevron-down">Browse</a></li>
+        <li><a href="#!" class="icon-chevron-down" >Browse</a></li>
         <li><a href="#!">All-Exclusive</a></li>
         <li><a href="#!">Docs</a></li>
       </ul>

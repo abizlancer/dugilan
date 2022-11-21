@@ -43,3 +43,9 @@ $poppins: ('Light', 300), ('Regular', 400), ('Medium', 500), ('SemiBold', 600), 
   color: $color;
   font-weight: $fw;
 }
+@font-face {
+  font-family: 'FontName';
+  src: url('FileName.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

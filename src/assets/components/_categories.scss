@@ -1,0 +1,21 @@
+.categories {
+  background: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  &--title {
+    background: $blue;
+    text-transform: uppercase;
+    @include fonts(30px, 39px, $white, 600);
+    letter-spacing: -0.58%;
+    padding: 17px 25px 18px;
+  }
+  &__item {
+    padding: 24px 30px 25px;
+    border: 1px solid #ebebeb;
+    background: $white;
+    &:hover {
+      // background: ;
+    }
+  }
+}

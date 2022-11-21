@@ -1,0 +1,41 @@
+.callout {
+  padding: 30px 31px;
+  background: $light-blue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  
+  &__item {
+    display: flex;
+    gap: 16.67px;
+    align-items: flex-start;
+    
+    &--img {
+      // width: 41px;
+      // height: 40px;
+      padding: 11.67px 13.89px;
+      background: $light-blue;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      img {
+        width: 14px;
+        height: 17px;
+      }
+    }
+    
+    h5 {
+      @include fonts(18px, 34px, #33334F, 600);
+      letter-spacing: -0.58%;
+      margin-bottom: 10px;
+    }
+    p {
+      @include fonts(15px, 24px, $stroke);
+      letter-spacing: -0.33%;
+    }
+  }
+}
