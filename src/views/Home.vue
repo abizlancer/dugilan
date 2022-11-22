@@ -1,10 +1,10 @@
-<template lang="">
-  <div class="wrapper container">
+<template>
+  <!-- <div class="wrapper container"> -->
     <app-header />
     <clients />
     <app-main />
     <build />
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -23,6 +23,3 @@ export default {
   }
 }
 </script>
-<style lang="">
-  
-</style>

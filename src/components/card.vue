@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="card__info">
-      <router-link :to="{ name: item.link }"><h5>{{ item.title }}</h5></router-link>
+      <router-link :to="{ name: `${item.link}`}"><h5>{{ item.title }}</h5></router-link>
       <h6>{{ item.stack }}</h6>
       <p>{{ item.price }}</p>
     </div>

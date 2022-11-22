@@ -6,48 +6,48 @@ export default defineStore("main", {
       {
         img: "/img/categories/home/card1.png",
         title: "RubICons",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card2.png",
         title: "RubICons",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {img: "/img/categories/home/card3.png",
         title: "Abstract Theme",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card4.png",
         title: "DugiCon",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card5.png",
         title: "DugiApp",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card6.png",
         title: "DugiOS",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card7.png",
         title: "DugiUI",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
@@ -61,28 +61,28 @@ export default defineStore("main", {
       {
         img: "/img/categories/home/card9.png",
         title: "Dugico",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card10.png",
         title: "UI Illustrations",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card11.png",
         title: "Login Apps",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },
       {
         img: "/img/categories/home/card12.png",
         title: "Analysis app",
-        link: "#!",
+        // link: "/",
         stack: "PHP, Wordpress",
         price: "$29,99"
       },

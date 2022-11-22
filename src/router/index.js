@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
@@ -10,6 +10,10 @@ const routes = [
     path: '/webShop',
     name: 'webShop',
     component: () => import('../views/WebShop.vue')
+  },
+  {
+    path: "/:catchAll(.*)*",
+    redirect: { name: "home" },
   },
 ]
 

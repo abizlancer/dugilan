@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header container">
     <div class="header__info">
       <h1>More than 100 Wordpress Themes & Templates</h1>
       <form action="#!">

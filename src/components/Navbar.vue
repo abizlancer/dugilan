@@ -1,6 +1,6 @@
 <template>
   <nav class="nav container">
-    <router-link :to="{ name: 'home' }">
+    <router-link to="/">
       <img src="/img/logo.svg" alt="logo">
     </router-link>
     <div class="nav__content">

@@ -1,5 +1,5 @@
 <template>
-  <section class="main">
+  <section class="main container">
     <article class="main__right">
       <categories title="Browse Categories" :browseCat="browseCat" />
       <subscribe />

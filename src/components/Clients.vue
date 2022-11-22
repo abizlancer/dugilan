@@ -1,5 +1,5 @@
 <template>
-  <section class="clients">
+  <section class="clients container">
    <h5>Some of our 500 clients already using Dugilan</h5>
    <div class="clients__items">
       <img v-for="(client, key) in clients" :key="key" :src="client.img" alt="client">
