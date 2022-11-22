@@ -1,5 +1,5 @@
 <template>
-  <section class="log-reg">
+  <section class="log-reg container">
     <div class="log">
       <account-form title="Login" :arr="log" />
       <div class="log-reg-submit">

@@ -1,13 +1,27 @@
 .log-reg {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
+  margin: 100px auto;
+  @include media(992) {
+    flex-direction: column;
+    row-gap: 45px;
+  }
+  .log, .reg {
+    width: 48%;
+    @include media(992) {
+      width: 100%;
+    }
+  }
   &-submit {
     display: flex;
     align-items: center;
     gap: 25px;
     margin: 30px 0 20px;
+    @include media(480) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
     label {
       display: flex;
       align-items: center;
@@ -27,5 +41,10 @@
   .log-lost {
     @include fonts(15px, 24px, #656567);
     letter-spacing: -0.0033em;
+  }
+  .reg {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
   }
 }

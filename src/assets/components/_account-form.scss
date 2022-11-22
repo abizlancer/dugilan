@@ -1,4 +1,11 @@
 .accoutn-form {
+  @include media(992) {
+    form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+    }
+  }
   h2 {
     @include fonts(35px, 44px, $black);
     letter-spacing: -0.0068em;
