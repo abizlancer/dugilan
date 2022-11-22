@@ -9,7 +9,7 @@
     <article class="main__content">
       <call-out />
       <div class="main__content--main">
-        <card />
+        <card :storage="mainItems" />
       </div>
     </article>
   </section>
@@ -18,6 +18,7 @@
 <script>
 import { mapState } from "pinia"
 import useCategoriesStore from "../stores/categories"
+import useMainStore from "../stores/main"
 import Card from "./Card.vue"
 import Categories from "./Categories.vue"
 import Subscribe from "./Subscribe.vue"
@@ -37,7 +38,8 @@ export default {
     Categories,
   },
   computed: {
-    ...mapState(useCategoriesStore, ["browseCat"])
+    ...mapState(useCategoriesStore, ["browseCat"]),
+    ...mapState(useMainStore, ["mainItems"])
   },
   
 }

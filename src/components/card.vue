@@ -1,5 +1,5 @@
 <template>
-  <article class="card" v-for="(item, key) in mainItems" :key="key">
+  <article class="card" v-for="(item, key) in storage" :key="key">
     <div class="card__img">
       <img :src="item.img" alt="card">
       <div class="card__links">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="card__info">
-      <router-link :to="{ name: `${item.link}`}"><h5>{{ item.title }}</h5></router-link>
+      <router-link :to="{ name: item.link}"><h5>{{ item.title }}</h5></router-link>
       <h6>{{ item.stack }}</h6>
       <p>{{ item.price }}</p>
     </div>
@@ -25,13 +25,9 @@
 </template>
 
 <script>
-import { mapState } from "pinia"
-import useMainStore from "../stores/main"
 
 export default {
   name: "card",
-  computed: {
-    ...mapState(useMainStore, ["mainItems"])
-  }
+  props: ["storage"]
 }
 </script>

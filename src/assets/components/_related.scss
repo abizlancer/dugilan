@@ -1,0 +1,17 @@
+.related {
+  margin-bottom: 100px;
+  h2 {
+    @include fonts(35px, 44px, $black);
+    letter-spacing: -0.0068em;
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 90.92px;
+    @include media(992) {
+      flex-direction: column;
+    }
+  }
+}

@@ -3,22 +3,29 @@
   justify-content: space-between;
   gap: 17px;
   margin: 0 auto 100px;
+  @include media(992) {
+    flex-direction: column-reverse;
+  }
   
   &__right {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    @include media(992) {
+      .categories {
+        display: none;
+      }
+    }
   }
   &__content {
-    
     &--main {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 37.5px;
       column-gap: 19.12px;
-      @include media(992) {
-        grid-template-columns: repeat(2, 1fr);
+      @include media(480) {
+        grid-template-columns: repeat(1, 1fr);
       }
     }
   }

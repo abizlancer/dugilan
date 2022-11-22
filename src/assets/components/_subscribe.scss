@@ -9,6 +9,9 @@
   border: 1px solid #EBEBEB;
   box-shadow: 1px 4px 44px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
+  @include media(480) {
+    width: 100%;
+  }
   
   h5 {
     @include fonts(18px, 27px, $black, 600);

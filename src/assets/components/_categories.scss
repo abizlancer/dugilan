@@ -1,7 +1,9 @@
 .categories {
+  width: 398px;
   background: $white;
   border-radius: 10px;
   overflow: hidden;
+  border: 1px solid #ebebeb;
   
   &--title {
     background: $blue;

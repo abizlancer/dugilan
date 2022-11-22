@@ -35,6 +35,7 @@ $light-blue: var(--light-blue);
   &-dribble::before {content: '\f434'; font-weight: 400; color: #EA4C89;}
   &-linkedIn::before {content: '\f0e1'; font-weight: 400; color: #007BB5;}
   &-play::before {content: '\f04b'; font-weight: 400;}
+  &-check::before {content: '\f00c'; font-weight: 400;}
   &-email::before {content: '\f0e0'; font-weight: 400;}
   &-heart::before {content: '\f004'; font-weight: 400;}
 }

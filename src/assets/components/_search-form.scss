@@ -1,0 +1,24 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  outline: 1px solid $stroke;
+  border-radius: 10px;
+  overflow: hidden;
+
+  input {
+    border: none;
+    outline: none;
+    padding: 20px;
+    background: $white;
+    width: 100%;
+
+    &::placeholder {
+      @include fonts(15px, 22.5px, $stroke);
+      letter-spacing: -0.18px;
+    }
+  }
+
+  .btn {
+    border-radius: 0 10px 10px 0;
+  }
+}

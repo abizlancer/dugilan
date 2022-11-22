@@ -2,10 +2,7 @@
   <header class="header container">
     <div class="header__info">
       <h1>More than 100 Wordpress Themes & Templates</h1>
-      <form action="#!">
-        <input type="text" placeholder="e.g Responsive slider">
-        <btn link="#!" text="Search" />
-      </form>
+      <Form />
       <p>From multipurpose themes to niche templates, you'll always find something that catches your eye.</p>
     </div>
     <div class="header__photos">
@@ -16,10 +13,12 @@
 
 <script>
 import btn from "./btn.vue";
+import Form from "./form.vue"
 
 export default {
   name: "Header",
   components: {
+    Form,
     btn
   },
   data() {

@@ -1,6 +1,14 @@
 .webshop {
   display: flex;
   justify-content: space-between;
+  gap: 100px;
+  margin: 79px auto 100px;
+  @include media(1400) {
+    gap: 50px;
+  }
+  @include media(1200) {
+    flex-direction: column;
+  }
   
   &__main {
     display: flex;
@@ -67,6 +75,128 @@
     p {
       @include fonts(34px, 44px, $black);
       letter-spacing: 0.0068em;
+    }
+  }
+  
+  &__widgets {
+    p {
+      @include fonts(15px, 24px, #8786AD);
+      letter-spacing: 0.0033em;
+      margin-bottom: 21px;
+      text-align: center;
+    }
+    form {
+      margin-bottom: 38px;
+    }
+    .widgets__price {
+      filter: drop-shadow(1px 4px 44px rgba(0, 0, 0, 0.03));
+      background: #FFFFFF;
+      // border: 1px solid #EBEBEB;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      
+      &--title {
+        background: $blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 27px 25px 28px;
+        
+        p {
+          @include fonts(15px, 24px, $white);
+          letter-spacing: 0.0033em;
+          margin-bottom: 0;
+        }
+        h3 {
+          @include fonts(30px, 39px, $white, 600);
+          letter-spacing: -0.0058em;
+        }
+      }
+      &--items {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        padding: 24px 30px 25px;
+        border: 1px solid #EBEBEB;
+        
+        p {
+          @include fonts(15px, 24px, #33334F);
+          letter-spacing: -0.0033em;
+          margin-bottom: 0;
+        }
+        &:last-of-type {
+          width: 100%;
+          background: $white;
+          border-radius: 0 0 10px 10px;
+          
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+      
+    }
+    .widget--extend {
+      display: flex;
+      flex-direction: column;
+      background: rgba(15, 175, 233, 0.1);
+      border: 1px solid #EBEBEB;
+      padding: 0;
+      
+      &--title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background: $white;
+        padding: 24px 30px 25px;
+      }
+      &--item {
+        padding: 0 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &:last-of-type {
+          span {
+            @include fonts(20px, 29px, $blue, 600);
+            letter-spacing: 0.0033em;
+          }
+        }
+        p {
+          color: #8786AD;
+        }
+        span {
+          @include fonts(15px, 24px, #33334F);
+        }
+      }
+    }
+    .tech__widget {
+      background: $white;
+      border-radius: 10px;
+      border: 1px solid #EBEBEB;
+      overflow: hidden;
+      
+      &--item {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 30px 25px;
+        background: $white;
+        border: 1px solid #EBEBEB;
+        p, span {
+          @include fonts(15px, 24px, $black);
+          letter-spacing: -0.0033em;
+          text-align: right;
+          margin-bottom: 0;
+        }
+        span {
+          color: #8786AD;
+          text-align: left;
+        }
+      }
     }
   }
 }
