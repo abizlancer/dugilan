@@ -1,0 +1,30 @@
+.accoutn-form {
+  h2 {
+    @include fonts(35px, 44px, $black);
+    letter-spacing: -0.0068em;
+    margin-bottom: 25px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    
+    h6 {
+      @include fonts(12px, 21px, #8786AD);
+      letter-spacing: 0.0112em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    input {
+      border: 1px solid #EBEBEB;
+      border-radius: 7px;
+      padding: 22px 20px;
+      outline: none;
+      @include fonts(15px, 24px, $black);
+      &::placeholder {
+        @include fonts(15px, 24px, #8786AD);
+        letter-spacing: -0.0033em;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

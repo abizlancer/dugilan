@@ -1,0 +1,40 @@
+.address {
+  width: 65%;
+  h2 {
+    @include fonts(35px, 44px, $black);
+    letter-spacing: -0.0068em;
+  }
+  h4 {
+    @include fonts(25px, 34px, $black);
+    letter-spacing: -0.0058em;
+    margin: 20px 0 25px;
+  }
+  button {
+    border: none;
+    outline: none;
+    @include fonts(15px, 24px, $blue);
+    letter-spacing: -0.0033em;
+    margin-bottom: 25px;
+    background: $white;
+  }
+  &__info {
+    background: $white;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    
+    &--item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px 25px;
+      border: 1px solid #EBEBEB;
+      span, p {
+        @include fonts(15px, 24px, #8786AD);
+        letter-spacing: -0.0033em;
+      }
+      p {
+        color: $black;
+      }
+    }
+  }
+}

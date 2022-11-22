@@ -1,7 +1,7 @@
 <template>
   <section class="main container">
     <article class="main__right">
-      <categories title="Browse Categories" :browseCat="browseCat" />
+      <categories title="Browse Categories" :widgetCat="browseCat" />
       <subscribe />
       <chart />
       <ads />

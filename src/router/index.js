@@ -12,6 +12,16 @@ const routes = [
     component: () => import('../views/WebShop.vue')
   },
   {
+    path: '/account',
+    name: 'account',
+    component: () => import('../views/Account.vue')
+  },
+  {
+    path: '/logReg',
+    name: 'logReg',
+    component: () => import('../views/LoginAndRegister.vue')
+  },
+  {
     path: "/:catchAll(.*)*",
     redirect: { name: "home" },
   },

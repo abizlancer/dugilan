@@ -1,5 +1,6 @@
 <template>
-  <a href="#!" class="btn">{{ text }}</a>
+  <a :href="link" class="btn">{{ text }}</a>
+  <!-- <router-link :to="{ name: link }" class="btn">{{ text }}</router-link> -->
 </template>
 
 <script>

@@ -39,6 +39,27 @@ export default defineStore("categories", ({
         link: "#!"
       },
     ],
-    profileCat: []
+    profileCat: [
+      {
+        text: "Dashboard",
+        link: "#!",
+      },
+      {
+        text: "Orders",
+        link: "#!",
+      },
+      {
+        text: "Address",
+        link: "#!",
+      },
+      {
+        text: "Account details",
+        link: "#!",
+      },
+      {
+        text: "Logout",
+        link: "#!",
+      },
+    ]
   })
 }))

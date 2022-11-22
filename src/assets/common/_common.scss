@@ -58,3 +58,9 @@ $light-blue: var(--light-blue);
     padding: 15px;
   }
 }
+.account {
+  display: flex;
+  gap: 151px;
+  margin: 100px auto;
+  align-items: baseline;
+}
