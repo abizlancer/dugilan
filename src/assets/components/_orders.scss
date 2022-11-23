@@ -1,0 +1,75 @@
+.orders {
+  width: 100%;
+  
+  h2 {
+    @include fonts(35px, 44px, $black);
+    letter-spacing: -0.0068em;
+    margin-bottom: 50px;
+  }
+  &__list {
+    @include media(768) {
+      overflow: hidden;
+      
+    }
+  }
+  .shopping__details {
+    width: 100%;
+    &--title {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      justify-content: unset;
+      
+      p:first-of-type {
+        grid-column: span 2;
+      }
+      
+      @include media(768) {
+        padding: 20px;
+      }
+      @include media(576) {
+        overflow: scroll;
+        width: 150%;
+      }
+    }
+    &--content {
+      @include media(576) {
+        overflow: scroll;
+      }
+    }
+    &--item {
+      @include media(992) {
+        padding: 10px;
+      }
+      @include media(576) {
+        width: 150%;
+      }
+      &-logo {
+        gap: 0;
+      }
+      &-links {
+        display: flex;
+        align-items: center;
+        @include media(992) {
+          flex-direction: column;
+        }
+        
+        a:first-of-type {
+          @include fonts(15px, 22.5px, #525F7F, 500);
+          letter-spacing: -0.18px;
+          text-transform: uppercase;
+          margin-right: 20.2px;
+          @include media(992) {
+            margin-bottom: 5px;
+            height: unset;
+          }
+        }
+        .btn {
+          @include media(992) {
+            padding: 5px;
+            height: unset;
+          }
+        }
+      }
+    }
+  }
+}

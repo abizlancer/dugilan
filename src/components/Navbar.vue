@@ -18,7 +18,7 @@
           <img src="/img/shopping-bag.svg" alt="icon">
           <span>5</span>
         </router-link>
-        <btn text="Account" link="account" />
+        <btn text="Account" link="logReg" />
       </div>
       <div class="nav--burger">
         <span></span>

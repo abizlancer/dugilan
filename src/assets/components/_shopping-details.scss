@@ -29,6 +29,9 @@
     @include media(576) {
       padding: 20px;
     }
+    @include media(480) {
+      padding: 10px;
+    }
     &:last-of-type {
       border-radius: 0 0 10px 10px;
     }

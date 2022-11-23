@@ -38,6 +38,7 @@ $light-blue: var(--light-blue);
   &-check::before {content: '\f00c'; font-weight: 400;}
   &-email::before {content: '\f0e0'; font-weight: 400;}
   &-heart::before {content: '\f004'; font-weight: 400;}
+  &-close::before {content: '\f00d'; font-weight: 400;}
 }
 .container {
   @include container();
@@ -63,4 +64,21 @@ $light-blue: var(--light-blue);
   gap: 151px;
   margin: 100px auto;
   align-items: baseline;
+  .categories__item:last-of-type {
+    color: $red;
+  }
+  @include media(1400) {
+    gap: 50px;
+    flex-direction: column;
+    .orders {
+      width: 100%;
+    }
+  }
+  @include media(992) {
+    flex-direction: column;
+    margin: 50px auto;
+    .categories, .dashboard, .address {
+      width: 100%;
+    }
+  }
 }

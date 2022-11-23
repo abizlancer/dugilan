@@ -28,6 +28,9 @@
       align-items: center;
       padding: 24px 40px 25px;
       border: 1px solid #EBEBEB;
+      @include media(576) {
+        padding: 20px;
+      }
       span, p {
         @include fonts(15px, 24px, #8786AD);
         letter-spacing: -0.0033em;

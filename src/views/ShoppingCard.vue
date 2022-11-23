@@ -2,7 +2,7 @@
   <section class="shopping-card container">
     <h2>Shopping Card</h2>
     <article class="shopping-card__content">
-      <shopping-details />
+      <shopping-details :items="cardItems" />
       <div class="shopping-card__totals">
         <div class="shopping-card__totals--widget">
           <h3>Card totals</h3>
@@ -48,6 +48,26 @@ export default {
         {
           text: "Total",
           price: "€ 89,99",
+        },
+      ],
+      cardItems: [
+        {
+          logo: "WireDugi",
+          price: "#2306",
+          quantity: "1",
+          suptotal: "€ 89,99",
+        },
+        {
+          logo: "WireDugi",
+          price: "#2306",
+          quantity: "1",
+          suptotal: "€ 89,99",
+        },
+        {
+          logo: "WireDugi",
+          price: "#2306",
+          quantity: "1",
+          suptotal: "€ 89,99",
         },
       ]
     }

@@ -3,7 +3,7 @@
     <div class="log">
       <account-form title="Login" :arr="log" />
       <div class="log-reg-submit">
-        <btn text="Login to your account" link="#!" />
+        <btn text="Login to your account" link="account" />
         <label for="#!">
           <input type="checkbox">
           <span>Remember me</span>
@@ -15,7 +15,7 @@
       <account-form title="Register" :arr="null" input="text" placeholder="sabrihakuli@outlook.com" />
       <p>A password will be sent to your email address.</p>
       <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-      <btn text="Register" link="#!" />
+      <btn text="Register" link="account" />
     </div>
   </section>
 </template>

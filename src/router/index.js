@@ -32,6 +32,16 @@ const routes = [
     component: () => import('../views/ResetPassword.vue')
   },
   {
+    path: '/billing',
+    name: 'billing',
+    component: () => import('../views/Billing.vue')
+  },
+  {
+    path: '/thank',
+    name: 'thank',
+    component: () => import('../views/Thank.vue')
+  },
+  {
     path: "/:catchAll(.*)*",
     redirect: { name: "home" },
   },

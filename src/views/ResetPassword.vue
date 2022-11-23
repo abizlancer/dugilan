@@ -3,7 +3,7 @@
     <h2>Forgot password</h2>
     <p>Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.</p>
     <account-form label="Username or Email" placeholder="sabrihakuli@outlook.com" />
-    <btn text="Reset password" link="#!" />
+    <btn text="Reset password" link="home" />
   </section>
 </template>
 
