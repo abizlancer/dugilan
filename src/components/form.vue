@@ -1,6 +1,6 @@
 <template >
   <form action="#!" class="search-form">
-    <input type="text" placeholder="e.g Responsive slider">
+    <input type="text" :placeholder="placeholder != null ? placeholder : 'e.g Responsive slider'">
     <btn link="#!" text="Search"/>
   </form>
 </template>
@@ -12,6 +12,7 @@ export default {
   name: "Form",
   components: {
     btn
-  }
+  },
+  props: ["placeholder"]
 }
 </script>

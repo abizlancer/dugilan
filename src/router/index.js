@@ -22,6 +22,16 @@ const routes = [
     component: () => import('../views/LoginAndRegister.vue')
   },
   {
+    path: '/shoppingCard',
+    name: 'shoppingCard',
+    component: () => import('../views/ShoppingCard.vue')
+  },
+  {
+    path: '/resetPassword',
+    name: 'resetPassword',
+    component: () => import('../views/ResetPassword.vue')
+  },
+  {
     path: "/:catchAll(.*)*",
     redirect: { name: "home" },
   },

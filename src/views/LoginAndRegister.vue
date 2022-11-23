@@ -9,7 +9,7 @@
           <span>Remember me</span>
         </label>
       </div>
-      <a href="#!" class="log-lost">Lost your password?</a>
+      <router-link :to="{ name: 'resetPassword' }" class="log-lost">Lost your password?</router-link>
     </div>
     <div class="reg">
       <account-form title="Register" :arr="null" input="text" placeholder="sabrihakuli@outlook.com" />

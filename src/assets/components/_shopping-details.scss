@@ -1,0 +1,49 @@
+.shopping__details {
+  width: 65%;
+  border-radius: 10px;
+  overflow: hidden;
+  @include media(992) {
+    width: 100%;
+  }
+  &--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $light-blue;
+    padding: 24px 50px 25px;
+    @include media(576) {
+      padding: 20px;
+    }
+    
+    p {
+      @include fonts(15px, 24px, $black);
+      letter-spacing: 0.0033em;
+    }
+  }
+  &--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    border: 1px solid #EBEBEB;
+    @include media(576) {
+      padding: 20px;
+    }
+    &:last-of-type {
+      border-radius: 0 0 10px 10px;
+    }
+    &-logo {
+      display: flex;
+      align-items: center;
+      gap: 38.34px;
+      @include media(576) {
+        gap: 10px;
+        
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

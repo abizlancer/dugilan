@@ -5,6 +5,7 @@
       <img v-if="category.img != null" :src="category.img" alt="">
       {{ category.text }}
     </a>
+    
   </article>
 </template>
 

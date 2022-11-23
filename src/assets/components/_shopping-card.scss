@@ -1,0 +1,81 @@
+.shopping-card {
+  margin: 100px auto;
+  h2 {
+    @include fonts(35px, 44px, $black);
+    letter-spacing: -0.0068em;
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 50px;
+    @include media(992) {
+      flex-direction: column;
+    }
+  }
+  &__form {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    @include media(1600) {
+      width: 100%;
+    }
+    @include media(992) {
+      flex-direction: column;
+    }
+    
+    form {
+      width: 65%;
+      border: 1px solid #ebebeb;
+      @include media(992) {
+        width: 100%;
+      }
+    }
+    .btn {
+      background: $light-blue;
+      color: $blue;
+    }
+    p {
+      @include fonts(15px, 24px, #8786AD);
+      letter-spacing: -0.0033em;
+    }
+  }
+  &__totals {
+    width: 398px;
+    @include media(992) {
+      width: 100%;
+    }
+    &--widget {
+      margin-bottom: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      h3 {
+        @include fonts(30px, 39px, $white, 600);
+        letter-spacing: -0.0058em;
+        background: $blue;
+        padding: 27px 30px 28px;
+        
+      }
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 30px 25px;
+        border: 1px solid #ebebeb;
+        &:last-of-type {
+          background: $light-blue;
+          border-radius: 0 0 10px 10px;
+          p {
+            color: $black;
+          }
+        }
+        p {
+          @include fonts(15px, 24px, #8786AD);
+          letter-spacing: -0.0033em;
+        }
+      }
+    }
+  }
+}

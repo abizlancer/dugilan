@@ -14,11 +14,11 @@
           <img src="/img/heart.svg" alt="icon">
           <span>1</span>
         </a>
-        <a href="#!" class="nav__links--link">
+        <router-link :to="{ name: 'shoppingCard' }" class="nav__links--link">
           <img src="/img/shopping-bag.svg" alt="icon">
           <span>5</span>
-        </a>
-        <btn text="Account" link="logReg" />
+        </router-link>
+        <btn text="Account" link="account" />
       </div>
       <div class="nav--burger">
         <span></span>
