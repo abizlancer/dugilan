@@ -42,7 +42,7 @@ $light-blue: var(--light-blue);
 }
 .container {
   @include container();
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .btn {
   padding: 30px;
